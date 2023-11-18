@@ -1,0 +1,34 @@
+.desknav_container {
+    padding: 0rem 1rem;
+}
+
+.desknav_content {
+    width: var(--max-width);
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0 .5rem 0;
+
+}
+
+.navigation_links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navigation_links li {
+    color: var(--gray-shade);
+    font-size: 1rem;
+    font-weight: 400;
+
+    cursor: pointer;
+}
+
+.navigation_links li span {
+    color: var(--purple-shade);
+}
+

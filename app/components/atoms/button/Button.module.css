@@ -1,0 +1,24 @@
+.button_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    background-color: transparent;
+    padding: .8rem 1rem;
+    outline: none !important;
+    border: none !important;
+    border: 1px solid var(--purple-shade) !important;
+
+    color: var(--white-shade);
+    font-family: var(--font-fira-code);
+    font-size: 1rem;
+    font-weight: 500;
+    word-wrap: break-word;
+
+    cursor: pointer;
+
+
+}
+
+

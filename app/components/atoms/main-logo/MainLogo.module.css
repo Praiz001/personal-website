@@ -1,0 +1,14 @@
+.main_logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    width: max-content;
+
+    cursor: pointer;
+}
+
+.main_logo p {
+    color: var(--white-shade);
+    font-size: 1rem;
+    font-weight: 700;
+}

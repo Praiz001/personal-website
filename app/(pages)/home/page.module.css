@@ -1,0 +1,8 @@
+.home_container {
+    max-width: var(--max-width);
+    margin: auto; 
+}
+
+.hero_section {
+    margin-top: 3.9rem;
+}
