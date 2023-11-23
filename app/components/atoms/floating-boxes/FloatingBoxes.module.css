@@ -1,0 +1,35 @@
+.asthetics figure:nth-of-type(1) {
+    position: absolute;
+    top: 672px;
+    right: -9px;
+}
+
+.asthetics figure:nth-of-type(2) {
+    position: absolute;
+    top: 1160px;
+    right: -17px;
+}
+
+.asthetics figure:nth-of-type(3) {
+    position: absolute;
+    top: 955px;
+    left: -46px;
+}
+
+.asthetics figure:nth-of-type(4) {
+    position: absolute;
+    top: 2125px;
+    left: -30px;
+}
+
+.asthetics figure:nth-of-type(5) {
+    position: absolute;
+    top: 2294px;
+    right: -23px;
+}
+
+.asthetics figure:nth-of-type(6) {
+    position: absolute;
+    top: 2705px;
+    left: -45px;
+}

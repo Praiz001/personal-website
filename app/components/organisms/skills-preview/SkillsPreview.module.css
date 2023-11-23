@@ -1,0 +1,71 @@
+.skillspreview_wrapper {
+}
+
+.preview_header {
+    max-width: 24.4rem;
+}
+
+.preview_content {
+    margin-top: 2.7rem;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.preview_figures {
+    position: relative;
+    /* width: 40%; */
+    max-width: 24.4rem;
+    width: 100%;
+}
+
+.preview_figures figure:nth-of-type(1) {
+    position: absolute;
+    top: 0.4rem;
+    left: 2rem;
+}
+
+.preview_figures figure:nth-of-type(2) {
+    position: absolute;
+    bottom: 105px;
+    left: 209px;
+}
+
+.preview_figures figure:nth-of-type(3) {
+    position: absolute;
+    bottom: 29px;
+    left: 47px;
+}
+
+.preview_figures figure:nth-of-type(4) {
+    position: absolute;
+    bottom: 235px;
+    left: 259px;
+}
+
+.preview_figures figure:nth-of-type(5) {
+    position: absolute;
+    bottom: 66px;
+    left: 329px;
+}
+
+.preview_skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    flex: 1;
+
+    max-width: 35.4rem;
+}
+
+.preview_skills div:nth-of-type(1) {
+   max-width: 100%;
+}
+
+.preview_skills div:nth-of-type(2), 
+.preview_skills div:nth-of-type(3)  {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}

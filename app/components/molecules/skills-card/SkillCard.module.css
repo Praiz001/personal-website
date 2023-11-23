@@ -1,0 +1,28 @@
+.skillscard_wrapper {
+    border: 1px solid var(--gray-shade);
+
+    font-size: 1rem;
+    word-wrap: break-word;
+    /* max-width: 11.1rem; */
+}
+
+.skillscard_wrapper p {
+    color: var(--white-shade);
+    font-weight: 600;
+    padding: .5rem;
+    border-bottom: 1px solid var(--gray-shade);
+}
+
+.skillscard_wrapper ul {
+    color: var(--gray-shade);
+    font-weight: 400;
+
+    padding: .5rem;
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+
+}

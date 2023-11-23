@@ -1,0 +1,22 @@
+.contactpreview_wrapper {
+}
+
+.contactpreview_wrapper section:nth-of-type(1) {
+    max-width: 20rem;
+}
+
+.contact_content {
+    margin-top: 2.8rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.contact_content>p {
+    max-width: 31.5rem;
+
+    color: var(--gray-shade);
+    font-size: 1rem;
+    font-weight: 500;
+    word-wrap: break-word;
+}

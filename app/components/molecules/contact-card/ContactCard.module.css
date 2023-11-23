@@ -1,0 +1,28 @@
+.contactcard_wrapper {
+    padding: 1rem;
+    border: 1px solid var(--gray-shade);
+
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+.contactcard_wrapper p {
+    color: var(--white-shade);
+    font-weight: 600;
+}
+
+.contactcard_wrapper ul {
+    margin-top: 1rem;
+    color: var(--gray-shade);
+    font-weight: 400;
+
+    list-style-type: none;
+}
+
+.contactcard_wrapper ul li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: .3rem;
+}

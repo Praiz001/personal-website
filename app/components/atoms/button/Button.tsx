@@ -7,13 +7,18 @@ import Image from 'next/image';
 interface ButtonProps {
     img?: any;
     label: string;
+    borderColor?: string
     onClick?: () => void;
 }
 
-const Button = ({img, label, onClick }: ButtonProps) => {
+const Button = ({ img, label, borderColor = "#C778DD", onClick }: ButtonProps) => {
 
     return (
-        <button className={styles.button_wrapper} onClick={onClick}>
+        <button 
+            style={{ border: `1px solid ${borderColor}`}} 
+            className={styles.button_wrapper}
+            onClick={onClick}
+        >
             {label}
             {img && <Image src={img} alt={`${label} illustration`} />}
         </button>

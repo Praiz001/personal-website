@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import './styles/globals.css'
 
 import { NavBar, Footer } from './components/organisms';
+import { SocialMedia, FloatingBoxes } from './components/atoms';
+
 
 export const metadata: Metadata = {
   title: 'Oshilim Praise',
@@ -22,6 +24,10 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+
+        {/* random asthetics */}
+        <SocialMedia />
+        <FloatingBoxes />
       </body>
     </html>
   )

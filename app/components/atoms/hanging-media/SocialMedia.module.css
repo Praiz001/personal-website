@@ -1,0 +1,22 @@
+.socialmedia_wrapper {
+    position: fixed;
+    left: 27px;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    z-index: 10;
+}
+
+.socialmedia_wrapper span {
+    height: 191px;
+    border: .5px solid var(--gray-shade);
+}
+
+.socialmedia_wrapper ul {
+    margin-top: 1rem;
+    list-style-type: none;
+    gap: .5rem;
+}
