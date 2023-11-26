@@ -6,3 +6,29 @@
 .contact_heading {
     margin-top: 7.1rem;
 }
+
+.contact_info {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.9rem;
+}
+
+.contact_info>p {
+    max-width: 28.6rem;
+
+    color: var(--gray-shade);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 26px;
+    word-wrap: break-word;
+}
+
+.contactinfo_form {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid var(--gray-shade);
+}
+
+.media_section {
+    margin-top: 1.6rem;
+}
