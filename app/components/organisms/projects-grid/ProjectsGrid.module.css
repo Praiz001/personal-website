@@ -28,7 +28,11 @@
 
 .projects_grid {
     display: flex;
-    justify-content: center;
-    align-items: stretch;
+    flex-wrap: wrap;
     gap: 1rem;
+
+    /* yea the line below is intentional */
+    align-items: flex-start; 
+    /* align-items: stretch; */
+    /* justify-content: center; */
 }

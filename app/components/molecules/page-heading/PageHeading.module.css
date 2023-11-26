@@ -1,0 +1,22 @@
+.pageheading_container {
+    color: var(--white-shade);
+    word-wrap: break-word;
+
+    max-width: fit-content;
+}
+
+.pageheading_container p:nth-of-type(1) {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.pageheading_container p:nth-of-type(1) span {
+    color: var(--purple-shade);
+}
+
+.pageheading_container p:nth-of-type(2) {
+    font-size: 1rem;
+    font-weight: 400;
+
+    margin-top: 0.9rem;
+}

@@ -22,6 +22,7 @@ type ProjectsGridProps = {
         }[]
         gridTitle: string
         seeMoreBtn: boolean
+        hasHorzLine: boolean
     }
 }
 
@@ -30,13 +31,13 @@ type ProjectsGridProps = {
 
 
 const ProjectsGrid = ({ data }: ProjectsGridProps) => {
-    const { projects, gridTitle, seeMoreBtn } = data;
+    const { projects, gridTitle, seeMoreBtn, hasHorzLine } = data;
 
     return (
         <div className={styles.projectsgrid_wrapper}>
             <section className={styles.projectsgrid_headers}>
                 <div>
-                    <SectionHeader title={gridTitle} />
+                    <SectionHeader title={gridTitle} hasHorzLine={hasHorzLine} />
                 </div>
                 {seeMoreBtn && (
                     <button>

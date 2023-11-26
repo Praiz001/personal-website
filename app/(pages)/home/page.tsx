@@ -42,7 +42,7 @@ export default function Home() {
             </section>
 
             <section className={styles.aboutmepreview_section}>
-                <AboutmePreview />
+                <AboutmePreview isPreview={true} />
             </section>
 
             <section className={styles.contactpreview_section}>

@@ -1,0 +1,17 @@
+.projects_container {
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.pageheading_section {
+    margin-top: 7.1rem;
+}
+
+.projectgrid_section {
+    margin-top: 4.3rem;
+    margin-bottom: 11.6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}

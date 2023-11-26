@@ -4,6 +4,10 @@
     gap: 1rem;
 }
 
+.aboutmedesc_center {
+    align-items: center;
+}
+
 .aboutme_desc {
     max-width: 32.3rem;
 }

@@ -13,6 +13,7 @@ export { default as squareLg } from "./svg/squareLg.svg";
 export { default as squareSm } from "./svg/squareSm.svg";
 export { default as portDots } from "./svg/portraitDots.svg";
 export { default as emailIcon} from "./svg/emailIcon.svg"
+export { default as logodotGroup } from "./svg/logodot.svg";
 
 
 

@@ -1,0 +1,8 @@
+.contact_container {
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.contact_heading {
+    margin-top: 7.1rem;
+}

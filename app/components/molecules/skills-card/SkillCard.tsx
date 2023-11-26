@@ -15,7 +15,7 @@ const SkillCard = ({ data }: SkillCardProps) => {
         <div className={styles.skillscard_wrapper}>
             <p>{title}</p>
             <ul>
-                {skills.map((skill, idx) => {
+                {skills?.map((skill, idx) => {
                     return (
                         <li key={idx}>{skill}</li>
                     )

@@ -27,7 +27,7 @@ export default function RootLayout({
 
         {/* random asthetics */}
         <SocialMedia />
-        <FloatingBoxes />
+        {/* <FloatingBoxes /> */}
       </body>
     </html>
   )

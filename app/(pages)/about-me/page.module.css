@@ -1,0 +1,63 @@
+.aboutme_container {
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.pageheading_section {
+    margin-top: 7.1rem;
+}
+
+.personaldesc_section {
+    margin-top: .5rem;
+}
+
+.skills_section {
+    margin-top: 7rem;
+}
+
+.skills_grid {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+
+    /* yea! the code below is intentional */
+    align-items: flex-start;
+}
+
+.funfact_section {
+    margin-top: 5.2rem;
+    margin-bottom: 10rem;
+}
+
+.funfact_content {
+    margin-top: 1.6rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.facts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+
+    max-width: 37.8rem;
+}
+
+.facts > p {
+    padding: .5rem;
+    border: 1px solid var(--gray-shade);
+    width: fit-content;
+
+    color: var(--gray-shade);
+    font-size: 1rem;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.fact_figures {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}

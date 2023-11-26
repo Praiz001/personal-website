@@ -14,7 +14,7 @@ const SkillsPreview = () => {
       return (
             <div className={styles.skillspreview_wrapper}>
                   <section className={styles.preview_header}>
-                        <SectionHeader title='skills' />
+                        <SectionHeader title='skills' hasHorzLine={true} />
                   </section>
 
                   <section className={styles.preview_content}>

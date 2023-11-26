@@ -6,19 +6,22 @@ import { SectionHeader, Button } from '../../atoms'
 import { mocks } from '../constant'
 import { portDots, persona2, squareDot } from '@/app/assets'
 
-const AboutmePreview = () => {
+interface AboutmePreviewProps {
+    isPreview: boolean
+}
+const AboutmePreview = ({ isPreview }: AboutmePreviewProps) => {
     const { aboutMe: { intro, par1, par2 } } = mocks;
 
     return (
-        <div className={styles.aboutmepreview_wrapper}>
+        <div className={`${styles.aboutmepreview_wrapper} ${isPreview === false && styles.aboutmedesc_center}`}>
             <section className={styles.aboutme_desc}>
-                <SectionHeader title='about me' />
+                {isPreview  && <SectionHeader title='about me' hasHorzLine={true} />}
 
                 <p>{intro}</p>
                 <p>{par1}</p>
                 <p>{par2}</p>
 
-                <Button label='Read more ->' />
+                {isPreview && <Button label='Read more ->' />}
             </section>
 
             <div className={styles.aboutme_images}>

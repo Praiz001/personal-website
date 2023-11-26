@@ -1,6 +1,7 @@
 .projectcard_wrapper {
     border: 1px solid var(--gray-shade);
-    max-width: 20.7rem;
+    max-width: 20.5rem;
+    width: 100%;
 
     overflow: hidden;
 }
@@ -16,6 +17,7 @@
 .project_tools {
     padding: .5rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: .5rem;
 
@@ -50,7 +52,9 @@
 
 .project_desc > div {
     display: flex;
-    align-items: stretch;
+    align-items: center;
+    /* align-items: stretch; */
     flex-wrap: wrap;
     gap: 1rem;
+   
 }

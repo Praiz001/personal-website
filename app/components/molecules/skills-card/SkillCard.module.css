@@ -1,9 +1,11 @@
 .skillscard_wrapper {
     border: 1px solid var(--gray-shade);
-
+    
     font-size: 1rem;
     word-wrap: break-word;
+    max-width: 12rem;
     /* max-width: 11.1rem; */
+    width: 100%;
 }
 
 .skillscard_wrapper p {
