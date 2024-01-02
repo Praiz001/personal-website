@@ -91,4 +91,6 @@
 .image_content p span:nth-of-type(2) {
     color: var(--white-shade);
     font-weight: 600;
+    
+    cursor: pointer;
 }

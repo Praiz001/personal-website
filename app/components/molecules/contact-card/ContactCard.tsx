@@ -24,6 +24,7 @@ const ContactCard = ({ data }: ContactCardProps) => {
                         <li key={idx}>
                             <Image src={img} alt='sm icon'/>
                             <a href={url} target="_blank" rel="noopener noreferrer">{label}</a>
+                            
                         </li>
                     )
                 })}

@@ -1,25 +1,9 @@
+"use client"
 import React from 'react';
 import styles from "./ProjectCard.module.css";
 import Image from 'next/image';
 
 import { Button } from '../../atoms';
-import { webViewImg } from '@/app/assets';
-
-// type action = {
-//   name: string
-//   url: string
-//   color: string
-// }
-
-// interface ProjectCardProps {
-//   cardData: {
-//     hasWebView: boolean
-//     projectTools: string []
-//     projectTitle: string
-//     projectDesc: string
-//     projectActions: action []
-//   }
-// }
 
 type ProjectCardProps = {
   cardData: {
@@ -27,22 +11,27 @@ type ProjectCardProps = {
     projectTools: string[]
     projectTitle: string
     projectDesc: string
+    projectImg: any
     projectActions: {
       name: string
       url: string
-      color: string
+      variant: "primary" | "secondary"
     }[]
   }
 }
 
 const ProjectCard = ({ cardData }: ProjectCardProps) => {
-  const { hasWebView, projectTools, projectTitle, projectDesc, projectActions } = cardData || {};
+  const { hasWebView, projectImg, projectTools, projectTitle, projectDesc, projectActions } = cardData || {};
+
+  const routeExternally = (route: string) => {
+    window.open(route, '_blank', 'noopener');
+  }
 
   return (
     <div className={styles.projectcard_wrapper} >
       <figure>
         {hasWebView && (
-          <Image src={webViewImg} alt='web view' />
+          <Image src={projectImg} alt='web view' width={330} height={201} />
         )}
       </figure>
 
@@ -60,9 +49,14 @@ const ProjectCard = ({ cardData }: ProjectCardProps) => {
           <p>{projectDesc}</p>
           <div>
             {projectActions?.map((actions, index) => {
-              const { name, url, color } = actions;
+              const { name, url, variant } = actions;
               return (
-                <Button key={index} label={name} borderColor={color} />
+                <Button 
+                  onClick={() => routeExternally(url)} 
+                  key={index} 
+                  label={name} 
+                  variant={variant}
+                />
               )
             })}
           </div>

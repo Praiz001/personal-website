@@ -17,7 +17,9 @@ const SkillCard = ({ data }: SkillCardProps) => {
             <ul>
                 {skills?.map((skill, idx) => {
                     return (
-                        <li key={idx}>{skill}</li>
+                        <li key={idx}>
+                            {skill}
+                        </li>
                     )
                 })}
             </ul>

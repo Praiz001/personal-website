@@ -1,19 +1,28 @@
+"use client"
 import React from 'react';
 import styles from "./HeroSection.module.css";
 import Image from 'next/image';
+
+import { useRouter } from 'next/navigation';
 
 import { persona, logoOutline, squareDot } from '@/app/assets';
 import { Button } from '../../atoms';
 
 
 const HeroSection = () => {
+    const router = useRouter();
     return (
         <div className={styles.hero_container}>
             <section className={styles.text_content}>
-                <p>Praise is a <span>front-end software developer.</span></p>
-                <p>He crafts responsive websites where technologies meet creativity.</p>
+                <p>Praise is a seasoned <span>front-end web developer.</span></p>
+                <p>
+                    He excels in crafting dynamic web applications with robust functionalities,
+                    tailored to exceed user expectations.
+                </p>
 
-                <Button label='Contact me!' />
+                <Button
+                    onClick={(() => router.push('/contacts'))}
+                    label='Contact me!' />
             </section>
 
             <section className={styles.image_content}>
@@ -28,16 +37,16 @@ const HeroSection = () => {
                         <Image src={squareDot} alt='box' />
                     </figure>
                 </div>
-                <p><span></span> Currently working on <span>Portfolio</span></p>
+                <p>
+                    <span></span>
+                    Currently working on
+                    <span onClick={() => router.push('/projects')}>
+                        Portfolio
+                    </span>
+                </p>
             </section>
         </div>
     )
 }
 
 export default HeroSection
-
-
-
-{/* <Image src={persona} alt='logo' height={386} width={457} /> */ }
-{/* <Image src={logoOutline} alt='logo' height={16} width={16} /> */ }
-{/* <Image src={squareDot} alt='logo' height={16} width={16} /> */ }

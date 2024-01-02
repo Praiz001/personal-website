@@ -21,15 +21,22 @@
     gap: 2rem;
 }
 
-.navigation_links li {
+.navigation_links .path {
     color: var(--gray-shade);
     font-size: 1rem;
     font-weight: 400;
 
     cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
-.navigation_links li span {
+.navigation_links .activePath {
+    font-weight: 500;
+    color: var(--white-shade);
+    transition: all .2s ease-in-out;
+}
+
+.navigation_links .path span {
     color: var(--purple-shade);
+    font-weight: 500;
 }
-

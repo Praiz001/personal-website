@@ -10,12 +10,13 @@ const ContactPreview = () => {
     return (
         <div className={styles.contactpreview_wrapper}>
             <section>
-                <SectionHeader title='contacts' />
+                <SectionHeader title='contacts' hasHorzLine={true} />
             </section>
 
             <section className={styles.contact_content}>
-                <p>I’m interested in freelance opportunities.
-                    However, if you have other request or question, don’t hesitate to contact me.
+                <p>
+                    I&apos;m open to freelance opportunities and collaborations. 
+                    Feel free to contact me for any inquiries or further information.
                 </p>
 
                 <div className={styles.contact_channels}>
@@ -26,4 +27,4 @@ const ContactPreview = () => {
     )
 }
 
-export default ContactPreview
+export default ContactPreview;

@@ -45,14 +45,14 @@
 }
 
 .facts > p {
-    padding: .5rem;
+    padding:  0.5rem;
     border: 1px solid var(--gray-shade);
     width: fit-content;
-
+    
     color: var(--gray-shade);
     font-size: 1rem;
     font-weight: 400;
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
 .fact_figures {

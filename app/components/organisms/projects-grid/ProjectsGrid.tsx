@@ -1,5 +1,7 @@
+"use client"
 import React from 'react'
 import styles from "./ProjectsGrid.module.css"
+import { useRouter } from 'next/navigation';
 
 import { SectionHeader } from '../../atoms'
 import { ProjectCard } from '../../molecules'
@@ -14,10 +16,11 @@ type ProjectsGridProps = {
             projectTools: string[]
             projectTitle: string
             projectDesc: string
+            projectImg: any
             projectActions: {
                 name: string
                 url: string
-                color: string
+                variant: "primary" | "secondary"
             }[]
         }[]
         gridTitle: string
@@ -31,6 +34,7 @@ type ProjectsGridProps = {
 
 
 const ProjectsGrid = ({ data }: ProjectsGridProps) => {
+    const router = useRouter();
     const { projects, gridTitle, seeMoreBtn, hasHorzLine } = data;
 
     return (
@@ -40,11 +44,11 @@ const ProjectsGrid = ({ data }: ProjectsGridProps) => {
                     <SectionHeader title={gridTitle} hasHorzLine={hasHorzLine} />
                 </div>
                 {seeMoreBtn && (
-                    <button>
+                    <button onClick={() => router.push('/projects')}>
                         View all ~~&gt;
                     </button>
                 )}
-            </section>
+            </section> 
 
             <section className={styles.projects_grid}>
                 {projects?.map((project, index) => {

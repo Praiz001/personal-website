@@ -18,10 +18,16 @@ const Footer = () => {
                     <section>
                         <span>
                             <MainLogo style={{ textStyle: { fontWeight: "500" } }} />
-                            <p>elias@elias-dev.ml</p>
+                            <p>oshilimpraisek@gmail.com</p>
                         </span>
-                        <p>Web designer and front-end developer</p>
-                        <p>Design Credit: Elias</p>
+                        <p>Front-end software developer</p>
+                        <p>Design Credit:&nbsp;
+                            <a href="https://www.figma.com/community/file/1164933568884615740"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                 Elias
+                            </a>
+                        </p>
                     </section>
 
                     <section className={styles.media_profile}>
@@ -49,4 +55,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footer;

@@ -9,8 +9,8 @@ import { SkillCard } from '../../molecules';
 import { mocks } from '../constant';
 
 
-const SkillsPreview = () => {
-      const { skills: { LangData, DbData, OtherData, ToolsData, FrameworkData } } = mocks;
+const SkillsPreview = () => { 
+      const { skills: { LangData, libData, OtherData, ToolsData, FrameworkData } } = mocks;
       return (
             <div className={styles.skillspreview_wrapper}>
                   <section className={styles.preview_header}>
@@ -41,12 +41,13 @@ const SkillsPreview = () => {
                                     <SkillCard data={LangData} />
                               </div>
                               <div>
-                                    <SkillCard data={DbData} />
-                                    <SkillCard data={OtherData} />
+                                    <SkillCard data={FrameworkData} />
+                                    <SkillCard data={libData} />
+                                    
                               </div>
                               <div>
+                                    <SkillCard data={OtherData} />
                                     <SkillCard data={ToolsData} />
-                                    <SkillCard data={FrameworkData} />
                               </div>
                         </div>
                   </section>

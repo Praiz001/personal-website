@@ -8,7 +8,7 @@ import { SectionHeader } from '@/app/components/atoms'
 import { mocks } from '../constants'
 
 const Contact = () => {
-    const { aboutmePage: { pageHeading}} = mocks;
+    const { contactmePage: { pageHeading,}} = mocks;
 
     return (
         <div className={styles.contact_container}>
@@ -17,9 +17,9 @@ const Contact = () => {
             </section>
 
             <section className={styles.contact_info}>
-                <p>I’m interested in freelance opportunities. However, 
-                    if you have other request or question, 
-                    don’t hesitate to contact me
+                <p>
+                    I&apos;m open to freelance opportunities and collaborations.
+                    Feel free to contact me for any inquiries or further information.
                 </p>
 
                 <div className={styles.contactinfo_form}>
@@ -27,11 +27,9 @@ const Contact = () => {
                 </div>
             </section>
 
-            <section className={styles.media_section}>
+            {/* <section className={styles.media_section}>
                 <SectionHeader title="all-media" hasHorzLine={false} />
-
-
-            </section>
+            </section> */}
         </div>
     )
 }

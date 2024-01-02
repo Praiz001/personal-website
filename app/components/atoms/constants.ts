@@ -11,18 +11,15 @@ export const mocks: AtomProps = {
     mediaLinks: [
         {
             img: githubIcon,
-            route: '/#'
+            route: 'https://github.com/Praiz001'
         },
         {
             img: twitterIcon,
-            route: '/#'
+            route: 'https://twitter.com/DWebGuy_Praise'
         },
         {
             img: linkedInIcon,
-            route: '/#'
+            route: 'www.linkedin.com/in/praise-oshilim-4039aa10a'
         }
     ],
-
-
-
 }

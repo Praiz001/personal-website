@@ -25,7 +25,7 @@ const AboutMe = () => {
         <SectionHeader title='skills' hasHorzLine={false} />
 
         <div className={styles.skills_grid}>
-          {skills.map((skill, idx) => {
+          {skills?.map((skill, idx) => {
             return (
               <SkillCard key={idx} data={skill} />
             )
@@ -38,7 +38,7 @@ const AboutMe = () => {
 
         <div className={styles.funfact_content}>
           <div className={styles.facts}>
-            {funFacts.map((fact, idx) => (
+            {funFacts?.map((fact, idx) => (
               <p key={idx}>{fact}</p>
             ))}
           </div>

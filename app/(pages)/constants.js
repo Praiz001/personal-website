@@ -1,3 +1,4 @@
+import { mealMasterImg, portfolio, tskTrack } from "../assets";
 
 export const mocks = {
   // ======> data for home page <========
@@ -6,46 +7,29 @@ export const mocks = {
       projects: [
         {
           hasWebView: true,
-          projectTools: ["HTML", "HTML", "HTML", "HTML"],
-          projectTitle: "ChertNodes",
-          projectDesc: "Minecraft servers hosting",
+          projectTools: ["NextJs", "Typescript"],
+          projectTitle: "Portfolio",
+          projectDesc: "Developer Portfolio Website",
+          projectImg: portfolio,
           projectActions: [
-            { name: "Live <~>", url: "<live-url>", color: "#C778DD" },
-            { name: "GitHub </>", url: "<source-code-url>", color: "#ABB2BF" },
+            {
+              name: "GitHub </>",
+              url: "https://github.com/Praiz001/personal-website",
+              variant: "secondary",
+            },
           ],
         },
         {
-          hasWebView: true,
-          projectTools: [
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-          ],
-          projectTitle: "ChertNodes",
-          projectDesc: "Minecraft servers hosting",
+          hasWebView: false,
+          projectTools: ["ReactJs", "WebSocket", "Redux", "Charts"],
+          projectTitle: "Price Feed",
+          projectDesc: "Realtime BTC/USDT price chart using binance API",
           projectActions: [
-            { name: "Live <~>", url: "<live-url>", color: "#C778DD" },
-            { name: "GitHub </>", url: "<source-code-url>", color: "#ABB2BF" },
-          ],
-        },
-        {
-          hasWebView: true,
-          projectTools: ["HTML", "HTML", "HTML", "HTML"],
-          projectTitle: "ChertNodes",
-          projectDesc: "Minecraft servers hosting",
-          projectActions: [
-            { name: "Live <~>", url: "<live-url>", color: "#C778DD" },
-            { name: "GitHub </>", url: "<source-code-url>", color: "#ABB2BF" },
+            {
+              name: "GitHub </>",
+              url: "https://github.com/Praiz001/FinChart",
+              variant: "secondary",
+            },
           ],
         },
       ],
@@ -65,74 +49,33 @@ export const mocks = {
       projects: [
         {
           hasWebView: true,
-          projectTools: ["HTML", "HTML", "HTML", "HTML"],
-          projectTitle: "ChertNodes",
-          projectDesc: "Minecraft servers hosting",
+          projectTools: ["NextJs", "Typescript"],
+          projectTitle: "Portfolio",
+          projectDesc: "Developer portfolio website",
+          projectImg: portfolio,
           projectActions: [
-            { name: "Live <~>", url: "<live-url>", color: "#C778DD" },
-            { name: "GitHub </>", url: "<source-code-url>", color: "#ABB2BF" },
+            {
+              name: "GitHub </>",
+              url: "https://github.com/Praiz001/personal-website",
+              variant: "secondary",
+            },
           ],
         },
         {
-          hasWebView: true,
-          projectTools: [
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-          ],
-          projectTitle: "ChertNodes",
-          projectDesc: "Minecraft servers hosting",
+          hasWebView: false,
+          projectTools: ["ReactJs", "WebSocket", "Redux", "Charts"],
+          projectTitle: "Price Feed",
+          projectDesc: "Realtime BTC/USDT price chart using binance API",
           projectActions: [
-            { name: "Live <~>", url: "<live-url>", color: "#C778DD" },
-            { name: "GitHub </>", url: "<source-code-url>", color: "#ABB2BF" },
-          ],
-        },
-        {
-          hasWebView: true,
-          projectTools: ["HTML", "HTML", "HTML", "HTML"],
-          projectTitle: "ChertNodes",
-          projectDesc: "Minecraft servers hosting",
-          projectActions: [
-            { name: "Live <~>", url: "<live-url>", color: "#C778DD" },
-            { name: "GitHub </>", url: "<source-code-url>", color: "#ABB2BF" },
-          ],
-        },
-        {
-          hasWebView: true,
-          projectTools: [
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-            "HTML",
-          ],
-          projectTitle: "ChertNodes",
-          projectDesc: "Minecraft servers hosting",
-          projectActions: [
-            { name: "Live <~>", url: "<live-url>", color: "#C778DD" },
-            { name: "GitHub </>", url: "<source-code-url>", color: "#ABB2BF" },
-          ],
-        },
-        {
-          hasWebView: true,
-          projectTools: ["HTML", "HTML", "HTML", "HTML"],
-          projectTitle: "ChertNodes",
-          projectDesc: "Minecraft servers hosting",
-          projectActions: [
-            { name: "Live <~>", url: "<live-url>", color: "#C778DD" },
-            { name: "GitHub </>", url: "<source-code-url>", color: "#ABB2BF" },
+            {
+              name: "GitHub </>",
+              url: "https://github.com/Praiz001/FinChart",
+              variant: "secondary",
+            },
           ],
         },
       ],
-      gridTitle: "completed-apps",
+      gridTitle: "recent-projects",
       seeMoreBtn: false,
       hasHorzLine: false,
     },
@@ -140,47 +83,45 @@ export const mocks = {
     ongoingProjectGrid: {
       projects: [
         {
-          hasWebView: false,
-          projectTools: ["HTML", "HTML", "HTML", "HTML"],
-          projectTitle: "ChertNodes",
-          projectDesc: "Minecraft servers hosting",
+          hasWebView: true,
+          projectTools: ["ReactJs", "CSS", "Javascript"],
+          projectTitle: "MealMaster",
+          projectDesc: "Landing page for a restaurant web app.",
+          projectImg: mealMasterImg,
           projectActions: [
-            // { name: "Live <~>", url: "<live-url>", color: "#C778DD" },
-            { name: "GitHub </>", url: "<source-code-url>", color: "#ABB2BF" },
+            {
+              name: "Live <~>",
+              url: "https://gericht-luxe-restaurant.netlify.app/",
+              variant: "primary",
+            },
+            {
+              name: "GitHub </>",
+              url: "https://github.com/Praiz001/mealMaster",
+              variant: "secondary",
+            },
           ],
         },
         {
-          hasWebView: false,
-          projectTools: ["HTML", "HTML", "HTML"],
-          projectTitle: "ChertNodes",
-          projectDesc: "Minecraft servers hosting",
+          hasWebView: true,
+          projectTools: ["ReactJs", "CSS", "Javascript"],
+          projectTitle: "Task Track",
+          projectDesc: "Task tracking app",
+          projectImg: tskTrack,
           projectActions: [
-            // { name: "Live <~>", url: "<live-url>", color: "#C778DD" },
-            { name: "GitHub </>", url: "<source-code-url>", color: "#ABB2BF" },
-          ],
-        },
-        {
-          hasWebView: false,
-          projectTools: ["HTML", "HTML", "HTML", "HTML"],
-          projectTitle: "ChertNodes",
-          projectDesc: "Minecraft servers hosting",
-          projectActions: [
-            // { name: "Live <~>", url: "<live-url>", color: "#C778DD" },
-            { name: "GitHub </>", url: "<source-code-url>", color: "#ABB2BF" },
-          ],
-        },
-        {
-          hasWebView: false,
-          projectTools: ["HTML", "HTML", "HTML", "HTML"],
-          projectTitle: "ChertNodes",
-          projectDesc: "Minecraft servers hosting",
-          projectActions: [
-            // { name: "Live <~>", url: "<live-url>", color: "#C778DD" },
-            { name: "GitHub </>", url: "<source-code-url>", color: "#ABB2BF" },
+            {
+              name: "Live <~>",
+              url: "https://task-tracker-application.vercel.app/",
+              variant: "primary",
+            },
+            {
+              name: "GitHub </>",
+              url: "https://github.com/Praiz001/taskTracker",
+              variant: "secondary",
+            },
           ],
         },
       ],
-      gridTitle: "ongoing-apps",
+      gridTitle: "archived-projects",
       seeMoreBtn: false,
       hasHorzLine: false,
     },
@@ -195,41 +136,45 @@ export const mocks = {
     skills: [
       {
         title: "Languages",
-        skills: ["TypeScript", "TypeScript", "TypeScript"],
-      },
-      {
-        title: "Other",
-        skills: ["TypeScript", "TypeScript"],
-      },
-      {
-        title: "Tools",
-        skills: ["TypeScript", "TypeScript", "TypeScript"],
-      },
-      {
-        title: "Databases",
-        skills: ["TypeScript", "TypeScript"],
+        skills: ["Javascript,", "TypeScript,", "Solidity,"],
       },
       {
         title: "Frameworks",
-        skills: ["TypeScript", "TypeScript", "TypeScript"],
+        skills: ["NextJs"],
+      },
+      {
+        title: "Libraries",
+        skills: [
+          "ReactJs,",
+          "Redux,",
+          "Jest,",
+          "RTL,",
+          "NPM,",
+          "Charting Libraries",
+        ],
+      },
+      {
+        title: "Other",
+        skills: ["HTML,", "CSS,", "SASS,", "RestAPIs,", "Web Sockets"],
+      },
+      {
+        title: "Tools",
+        skills: ["VScode,", "Git,", "Postman,", "Swagger Docs"],
       },
     ],
     funFacts: [
-      "I like winter more than summer",
-      "I often bike with my friends",
-      "I like pizza and pasta",
-      "I was in Egypt, Poland and Turkey",
-      "My favorite movie is The Green Mile",
-      "I am still in school",
-      "I don’t have any siblings",
+      "I like to watch football ⚽",
+      "I am a Chelsea fan.",
+      "I tend to sleep during movies.",
+      "I'm the first of 5 sibblings.",
     ],
   },
 
   // ======> data for contact page <========
-  aboutmePage: {
+  contactmePage: {
     pageHeading: {
       title: "contacts",
-      desc: "Who am I ?",
+      desc: "Want to reach me ?",
     },
-  }
+  },
 };

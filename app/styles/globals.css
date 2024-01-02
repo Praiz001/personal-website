@@ -112,7 +112,6 @@ a {
 .main_container {
   padding: 0rem 1rem;
   min-height: 100vh;
-  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -120,5 +119,4 @@ a {
     color-scheme: dark;
   }
 }
-
 

@@ -1,13 +1,11 @@
 
 import styles from './page.module.css';
-import { HeroSection } from '@/app/components/organisms';
-import { quotesIcon } from '@/app/assets';
 
-import { ProjectsGrid, SkillsPreview, AboutmePreview, ContactPreview } from '@/app/components/organisms';
+import { HeroSection, ProjectsGrid, SkillsPreview, AboutmePreview, ContactPreview } from '@/app/components/organisms';
+import { RandomQuote } from '@/app/components/molecules';
 import { mocks } from "../constants"
 
 
-import Image from 'next/image';
 
 export default function Home() {
     const { homepage: { projectGrid } } = mocks;
@@ -18,19 +16,7 @@ export default function Home() {
             </section>
 
             <section className={styles.quote_section}>
-                <div className={styles.quote_wrapper}>
-                    <span>
-                        <figure className={styles.open_quote}>
-                            <Image src={quotesIcon} alt='quote' />
-                        </figure>
-                        <p>With great power comes great electricity bill</p>
-                        <figure className={styles.close_quote}>
-                            <Image src={quotesIcon} alt='quote' />
-                        </figure>
-
-                    </span>
-                    <p>- Dr. Who</p>
-                </div>
+                <RandomQuote />
             </section>
 
             <section className={styles.projectpreview_section}>

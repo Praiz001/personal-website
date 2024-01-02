@@ -3,6 +3,7 @@
     margin: auto;
 }
 
+
 .contact_heading {
     margin-top: 7.1rem;
 }
@@ -30,5 +31,6 @@
 }
 
 .media_section {
-    margin-top: 1.6rem;
+    /* margin-top: 1.6rem; */
+    margin-top: 2.5rem;
 }

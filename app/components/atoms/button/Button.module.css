@@ -1,4 +1,4 @@
-.button_wrapper {
+.button_shared {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,13 +7,65 @@
     background-color: transparent;
     padding: .5rem 1rem;
 
-    color: var(--white-shade);
     font-family: var(--font-fira-code);
     font-size: 1rem;
     font-weight: 500;
     word-wrap: break-word;
 
     cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    position: relative;
+}
+
+.primary_button {
+    border: 1px solid var(--purple-shade);
+    color: var(--white-shade);
+}
+
+.primary_button:hover {
+    background-color: rgba(199, 120, 221, 0.2);
+}
+
+.secondary_button {
+    border: 1px solid var(--gray-shade);
+    color: var(--gray-shade);
+}
+
+.secondary_button:hover {
+    background-color: rgba(171, 178, 191, 0.2);
 }
 
 
+/* =====> loading state animation <===== */
+.spinner {
+    width: 15px;
+    height: 15px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 1.5px solid;
+    border-bottom: .0px solid transparent;
+    border-left: .0px solid transparent;
+    border-radius: 50%;
+
+    animation: spin .5s linear infinite;
+    transform-origin: center center;
+}
+
+.loading_btn_txt {
+    visibility: hidden;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

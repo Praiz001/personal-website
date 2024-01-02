@@ -14,6 +14,7 @@ export { default as squareSm } from "./svg/squareSm.svg";
 export { default as portDots } from "./svg/portraitDots.svg";
 export { default as emailIcon} from "./svg/emailIcon.svg"
 export { default as logodotGroup } from "./svg/logodot.svg";
+export { default as dotIcon } from "./svg/dot.svg";
 
 
 
@@ -22,6 +23,10 @@ export { default as logodotGroup } from "./svg/logodot.svg";
 export { default as persona } from "./images/persona.png";
 export { default as persona2 } from "./images/persona2.png";
 export { default as webViewImg } from "./images/iframeImg.jpg";
+
+export { default as mealMasterImg } from "./images/mealMaster.png";
+export { default as portfolio } from "./images/portfolio.png";
+export { default as tskTrack } from "./images/tskTrack.png";
 
 
 

@@ -6,20 +6,32 @@
     gap: 1rem;
 }
 
-.contactform_container > span {
+.contactform_container>span {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.contactform_container input:nth-of-type(1),
-.contactform_container input:nth-of-type(2) {
-   flex: 1;
+.contactform_container>span .input_group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+    position: relative;
 }
 
-.contactform_container input,
-.contactform_container textarea {
+.contactform_container .input_group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    position: relative;
+}
+
+.contactform_container .input_group input,
+.contactform_container .input_group textarea {
     width: 100%;
     background-color: transparent;
     border: 1px solid var(--gray-shade);
@@ -31,15 +43,81 @@
     word-wrap: break-word;
     font-family: var(--font-figo);
     resize: none;
-
-}
-
-.contactform_container input::placeholder,
-.contactform_container textarea::placeholder {
-    color: var(--gray-shade);
-}
-
-.contactform_container input:focus,
-.contactform_container textarea:focus {
     outline: none;
 }
+
+.contactform_container .input_group label {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+
+    color: var(--gray-shade);
+    font-size: 1rem;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-family: var(--font-figo);
+    padding: 0 4px 0 4px;
+    background-color: transparent;
+}
+
+.contactform_container .input_group input:focus~label,
+.contactform_container .input_group textarea:focus~label,
+.contactform_container .input_group input:valid~label,
+.contactform_container .input_group textarea:valid~label {
+    top: -11px;
+    font-size: .8rem;
+    background-color: var(--background-primary);
+    pointer-events: none;
+}
+
+.error {
+    font-size: .7rem;
+    font-style: italic;
+    color: var(--purple-shade);
+}
+
+
+
+
+/* .contactform_container>span .input_group input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--gray-shade);
+
+    padding: .5rem;
+    color: var(--gray-shade);
+    font-size: 1rem;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-family: var(--font-figo);
+
+} */
+
+/* .contactform_container>span .input_group label {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+
+    color: var(--gray-shade);
+    font-size: 1rem;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-family: var(--font-figo);
+}
+
+.contactform_container>span .input_group input:focus~label {
+    top: -11px;
+    background-color: var(--background-primary);
+    pointer-events: none;
+} */
+
+/* .contactform_container > span .input_group input:focus ~ label,
+.contactform_container>span .input_group input:valid~label  {
+    top: -11px;
+    background-color: var(--background-primary);
+    pointer-events: none;
+} */
