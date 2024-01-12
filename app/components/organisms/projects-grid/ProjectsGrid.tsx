@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 
 import { SectionHeader } from '../../atoms'
 import { ProjectCard } from '../../molecules'
-
+import { StaticImageData } from 'next/image';
 
 
 
@@ -16,7 +16,7 @@ type ProjectsGridProps = {
             projectTools: string[]
             projectTitle: string
             projectDesc: string
-            projectImg: any
+            projectImg: StaticImageData
             projectActions: {
                 name: string
                 url: string

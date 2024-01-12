@@ -20,3 +20,21 @@
     list-style-type: none;
     gap: .5rem;
 }
+
+.socialmedia_wrapper ul li {
+    transition: all .3s ease-in-out;
+}
+
+.socialmedia_wrapper ul li:hover {
+    transition: all .3s ease-in-out;
+    scale: 1.3;
+}
+
+
+
+
+@media (max-width: 1167px) {
+    .socialmedia_wrapper {
+        display: none;
+    }
+}

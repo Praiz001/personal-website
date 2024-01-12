@@ -13,7 +13,7 @@ interface AboutmePreviewProps {
 }
 const AboutmePreview = ({ isPreview }: AboutmePreviewProps) => {
     const router = useRouter();
-    const { aboutMe: { intro, par1, par2, par3, par4 } } = mocks;
+    const { aboutMe: { intro, par1, par2, par3, par4, par5} } = mocks;
 
     return (
         <div className={`${styles.aboutmepreview_wrapper} ${!isPreview && styles.aboutmedesc_center}`}>
@@ -27,6 +27,7 @@ const AboutmePreview = ({ isPreview }: AboutmePreviewProps) => {
                         <p>{par2}</p>
                         <p>{par3}</p>
                         <p>{par4}</p>
+                        <p>{par5}</p>
                     </>
                 )}
                 {isPreview && <Button 

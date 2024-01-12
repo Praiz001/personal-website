@@ -22,7 +22,25 @@
 .contactcard_wrapper ul li {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 0.3rem;
     margin-top: .3rem;
+}
+
+@media (max-width: 620px) {
+    .contactcard_wrapper {
+        padding: 0;
+    }
+}
+
+@media (max-width: 300px) {
+    .contactcard_wrapper ul li img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contactcard_wrapper {
+        word-break: break-all;
+    }
+
 }

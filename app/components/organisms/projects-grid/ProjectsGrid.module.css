@@ -36,3 +36,22 @@
     /* align-items: stretch; */
     /* justify-content: center; */
 }
+
+@media (max-width: 710px) {
+    .projects_grid {
+       justify-content: center; 
+    }
+}
+
+@media (max-width: 450px) {
+    .projectsgrid_headers>div:nth-of-type(1) {
+        width: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .projectsgrid_headers button {
+        font-size: .8rem;
+    }
+}
+

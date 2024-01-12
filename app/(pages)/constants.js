@@ -165,7 +165,7 @@ export const mocks = {
     funFacts: [
       "I like to watch football ⚽",
       "I am a Chelsea fan.",
-      "I tend to sleep during movies.",
+      "I always doze off at the movies 🥴",
       "I'm the first of 5 sibblings.",
     ],
   },

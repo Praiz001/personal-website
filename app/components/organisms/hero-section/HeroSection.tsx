@@ -28,7 +28,10 @@ const HeroSection = () => {
             <section className={styles.image_content}>
                 <div className={styles.images}>
                     <figure>
-                        <Image src={persona} alt='persona' />
+                        <Image src={persona} 
+                            // layout="responsive"
+                            alt='persona' 
+                        />
                     </figure>
                     <figure>
                         <Image src={logoOutline} alt='logo outline' />

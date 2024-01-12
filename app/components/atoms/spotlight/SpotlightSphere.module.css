@@ -1,0 +1,42 @@
+.spotlight_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    z-index: 10;
+}
+
+.spotlight {
+
+
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    /* background: radial-gradient(circle at center, #C778DD 10%, #FFFFFF 80%); */
+    background: radial-gradient(600px at 585px 3129px, rgba(29, 78, 216, 0.15), transparent 80%);
+    /* background: radial-gradient(circle,  #C778DD, #FFFFFF); */
+    /* background: radial-gradient(circle, red 10%, rgba(0, 0, 0, 0) 200px); */
+   
+    
+    /* background: radial-gradient(circle, transparent 10%, rgba(0, 0, 0, 0.8) 30%); */
+        /* box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2); */
+        /* transform: translate(-50%, -50%);
+        pointer-events: none;
+        z-index: -1; */
+
+
+}
+
+
+/* background-color: rgba(255, 255, 255, 0.7); */
+/* background-image: radial-gradient(circle, transparent 160px, rgba(0, 0, 0, 0) 200px); */
+/* background-image: radial-gradient(circle,
+                transparent 10%,
+                rgba(0, 0, 0, 0.8) 30%); */
+/* Adjust the color and transparency */
+/* transform: translate(-50%, -50%); */
+/* pointer-events: none; */

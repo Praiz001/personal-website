@@ -1,21 +1,27 @@
-.sectionhead_wrapper{
- display: flex;
- align-items: center;
- gap: 1rem;
+.sectionhead_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.sectionhead_wrapper p{
+.sectionhead_wrapper p {
     color: var(--white-shade);
     font-size: 2rem;
     font-weight: 500;
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
-.sectionhead_wrapper p span{
+.sectionhead_wrapper p span {
     color: var(--purple-shade);
 }
 
-.sectionhead_wrapper hr{
- flex: 1;
- border: .5px solid var(--purple-shade);
+.sectionhead_wrapper hr {
+    flex: 1;
+    border: .5px solid var(--purple-shade);
+}
+
+@media (max-width: 450px) {
+    .sectionhead_wrapper hr {
+        display: none;
+    }
 }

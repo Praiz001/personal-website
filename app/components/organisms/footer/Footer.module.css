@@ -57,24 +57,14 @@
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: .6rem;
 }
 
-/* .media_profile ul li {
-    background-color: transparent;
-    
-} */
-
-/* .media_profile ul li img{
-    background-color: transparent;
-    border-radius: 50%;
+.media_profile ul li {
     transition: all .3s ease-in-out;
 }
 
-.media_profile ul li img:hover {
-    background-color: transparent;
-    fill: var(--purple-shade);
-
-    box-shadow: 0 0 10px 5px rgba(199, 120, 221, 0.2);
-    box-shadow: 0 0 10px 5px var(--purple-shade); 
-} */
+.media_profile ul li:hover {
+    transition: all .3s ease-in-out;
+    scale: 1.3;
+}
