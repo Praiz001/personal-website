@@ -34,3 +34,20 @@
     /* margin-top: 1.6rem; */
     margin-top: 2.5rem;
 }
+
+@media (max-width: 900px) {
+    .contact_info {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .contact_info>p {
+        text-align: center;
+    }
+
+    .contactinfo_form {
+        max-width: 569px;
+       height: 342px;
+    }
+}

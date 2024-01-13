@@ -5,7 +5,7 @@ export const mocks = {
   navLinks: [
     {
       name: "home",
-      route: "/home",
+      route: "/",
     },
     {
       name: "projects",
