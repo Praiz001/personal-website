@@ -32,7 +32,7 @@ export const mocks = {
     // },
     {
       img: linkedInIcon,
-      route: "www.linkedin.com/in/praise-oshilim-4039aa10a",
+      route: "https://linkedin.com/in/praise-oshilim-4039aa10a",
     },
   ],
 

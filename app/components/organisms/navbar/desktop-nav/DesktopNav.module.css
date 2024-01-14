@@ -11,8 +11,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 0 .5rem 0;
-
-    /* background-color: brown; */
 }
 
 .navigation_links {
@@ -42,8 +40,3 @@
     font-weight: 500;
 }
 
-@media (max-width: 600px) {
-    .desknav_content {
-
-    }
-}

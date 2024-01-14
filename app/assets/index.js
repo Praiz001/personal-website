@@ -15,6 +15,8 @@ export { default as portDots } from "./svg/portraitDots.svg";
 export { default as emailIcon} from "./svg/emailIcon.svg"
 export { default as logodotGroup } from "./svg/logodot.svg";
 export { default as dotIcon } from "./svg/dot.svg";
+export { default as menuHamburger } from "./svg/menu.svg";
+export { default as closeIcon } from "./svg/close.svg";
 
 
 
