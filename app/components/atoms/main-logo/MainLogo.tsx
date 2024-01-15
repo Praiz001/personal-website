@@ -20,7 +20,7 @@ const MainLogo = ({ style }: MainLogoProps) => {
         <div
             className={styles.main_logo}
             style={{ ...style?.containerStyle }}
-            onClick={() => router.push('/home')}
+            onClick={() => router.push('/')}
         >
             <Image src={mainlogo} alt='logo' height={16} width={16} />
             <p style={{ ...style?.textStyle }}>Praise</p>
