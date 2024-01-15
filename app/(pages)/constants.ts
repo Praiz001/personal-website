@@ -1,9 +1,33 @@
+import { StaticImageData } from "next/image";
+
 import { mealMasterImg, portfolio, tskTrack } from "../assets";
+
+
+type ProjectsGridType = {
+  data: {
+    projects: {
+      hasWebView: boolean
+      projectTools: string[]
+      projectTitle: string
+      projectDesc: string
+      projectImg: StaticImageData
+      projectActions: {
+        name: string
+        url: string
+        variant: "primary" | "secondary"
+      }[]
+    }[]
+    gridTitle: string
+    seeMoreBtn: boolean
+    hasHorzLine: boolean
+  }
+}
+
 
 export const mocks = {
   // ======> data for home page <========
   homepage: {
-    projectGrid: {
+    projectGrid:  {
       projects: [
         {
           hasWebView: true,
@@ -36,7 +60,7 @@ export const mocks = {
       gridTitle: "projects",
       seeMoreBtn: true,
       hasHorzLine: true,
-    },
+    } as ProjectsGridType['data'],
   },
 
   // ======> data for projects page <========
@@ -78,7 +102,7 @@ export const mocks = {
       gridTitle: "recent-projects",
       seeMoreBtn: false,
       hasHorzLine: false,
-    },
+    } as ProjectsGridType['data'],
 
     ongoingProjectGrid: {
       projects: [
@@ -124,7 +148,7 @@ export const mocks = {
       gridTitle: "archived-projects",
       seeMoreBtn: false,
       hasHorzLine: false,
-    },
+    } as ProjectsGridType['data'],
   },
 
   // ======> data for about-me page <========
@@ -159,7 +183,7 @@ export const mocks = {
       },
       {
         title: "Tools",
-        skills: ["VScode,", "Git,", "Postman,", "Swagger Docs"],
+        skills: ["VScode,", "Git,", "Postman,"],
       },
     ],
     funFacts: [
