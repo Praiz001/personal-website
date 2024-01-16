@@ -15,10 +15,9 @@ const ContactPreview = () => {
 
             <section className={styles.contact_content}>
                 <p>
-                    I&apos;m open to freelance opportunities and collaborations. 
+                    I&apos;m always eager to explore exciting projects and potential collaborations. 
                     Feel free to contact me for any inquiries or further information.
                 </p>
-
                 <div className={styles.contact_channels}>
                     <ContactCard data={contactMe} />
                 </div>

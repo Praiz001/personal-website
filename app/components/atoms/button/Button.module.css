@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    /* gap: 1rem; */
 
     background-color: transparent;
     padding: .5rem 1rem;
@@ -16,6 +16,13 @@
     transition: all .2s ease-in-out;
 
     position: relative;
+}
+
+.button_shared span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
 }
 
 .primary_button {

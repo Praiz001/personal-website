@@ -56,11 +56,11 @@ const MobileNav = () => {
           <div className={styles.media_links}>
             <ul>
               {mediaLinks.map((link, idx) => {
-                const { img, route } = link;
+                const { Icon, route } = link;
                 return (
                   <li key={idx}>
                     <a href={route} target="_blank" rel="noopener noreferrer">
-                      <Image src={img} alt='media icon' height={64} width={64} />
+                      <Icon />
                     </a>
                   </li>
                 )

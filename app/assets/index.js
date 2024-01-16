@@ -17,6 +17,9 @@ export { default as logodotGroup } from "./svg/logodot.svg";
 export { default as dotIcon } from "./svg/dot.svg";
 export { default as menuHamburger } from "./svg/menu.svg";
 export { default as closeIcon } from "./svg/close.svg";
+export { default as arrUpRightIcon } from "./svg/uparright.svg";
+export { default as srcCodeIcon } from "./svg/code.svg";
+export { default as arrRightIcon } from "./svg/arrowRight.svg";
 
 
 

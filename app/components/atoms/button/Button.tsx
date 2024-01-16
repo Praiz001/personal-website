@@ -36,7 +36,7 @@ const Button = ({ img, label, onClick, customStyle, variant = "primary", isLoadi
             }
             <span className={`${isLoading && styles.loading_btn_txt}`} >
                 {label}
-                {img && <Image src={img} alt={`${label} illustration`} />}
+                {img && <Image src={img} alt="button" />}
             </span>
         </button>
     )

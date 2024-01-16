@@ -18,7 +18,7 @@ const Contact = () => {
 
             <section className={styles.contact_info}>
                 <p>
-                    I&apos;m open to freelance opportunities and collaborations.
+                    I&apos;m always eager to explore exciting projects and potential collaborations.
                     Feel free to contact me for any inquiries or further information.
                 </p>
 

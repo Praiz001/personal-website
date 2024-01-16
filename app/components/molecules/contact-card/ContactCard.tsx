@@ -2,10 +2,11 @@ import React from 'react'
 import styles from "./ContactCard.module.css"
 
 import Image from 'next/image'
+import { IconType } from 'react-icons'
 
 interface ContactCardProps {
     data: {
-        img: string
+        Icon: IconType
         label: string
         url: string
     }[]
@@ -18,13 +19,14 @@ const ContactCard = ({ data }: ContactCardProps) => {
             <p>Message me here</p>
             <ul>
                 {data?.map((item, idx) => {
-                    const { img, label, url } = item;
+                    const { Icon, label, url } = item;
 
                     return (
                         <li key={idx}>
-                            <Image src={img} alt='sm icon'/>
+                            <span>
+                                <Icon />
+                            </span>
                             <a href={url} target="_blank" rel="noopener noreferrer">{label}</a>
-                            
                         </li>
                     )
                 })}

@@ -25,6 +25,18 @@
     /* flex-wrap: wrap; */
     gap: 0.3rem;
     margin-top: .3rem;
+    transition: all .3s ease-in-out;
+}
+
+.contactcard_wrapper ul li:hover {
+    color: var(--white-shade);
+    transition: all .3s ease-in-out;
+}
+
+.contactcard_wrapper ul li span {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
 }
 
 @media (max-width: 620px) {
@@ -34,9 +46,10 @@
 }
 
 @media (max-width: 300px) {
-    .contactcard_wrapper ul li img {
+    .contactcard_wrapper ul li span {
         width: 20px;
         height: 20px;
+        font-size: 20px;
     }
 
     .contactcard_wrapper {

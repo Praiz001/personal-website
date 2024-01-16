@@ -16,6 +16,7 @@ type ProjectCardProps = {
       name: string
       url: string
       variant: "primary" | "secondary"
+      btnImg: any
     }[]
   }
 }
@@ -49,13 +50,14 @@ const ProjectCard = ({ cardData }: ProjectCardProps) => {
           <p>{projectDesc}</p>
           <div>
             {projectActions?.map((actions, index) => {
-              const { name, url, variant } = actions;
+              const { name, url, variant, btnImg } = actions;
               return (
                 <Button 
                   onClick={() => routeExternally(url)} 
                   key={index} 
                   label={name} 
                   variant={variant}
+                  img={btnImg}
                 />
               )
             })}

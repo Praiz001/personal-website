@@ -1,6 +1,8 @@
 import { StaticImageData } from "next/image";
 
-import { mealMasterImg, portfolio, tskTrack } from "../assets";
+import { mealMasterImg, portfolio, tskTrack, arrUpRightIcon, srcCodeIcon } from "../assets";
+import { FaCode } from "react-icons/fa6";
+import { FiArrowUpRight } from "react-icons/fi";
 
 
 type ProjectsGridType = {
@@ -15,6 +17,7 @@ type ProjectsGridType = {
         name: string
         url: string
         variant: "primary" | "secondary"
+        btnImg: any
       }[]
     }[]
     gridTitle: string
@@ -27,7 +30,7 @@ type ProjectsGridType = {
 export const mocks = {
   // ======> data for home page <========
   homepage: {
-    projectGrid:  {
+    projectGrid: {
       projects: [
         {
           hasWebView: true,
@@ -37,9 +40,10 @@ export const mocks = {
           projectImg: portfolio,
           projectActions: [
             {
-              name: "GitHub </>",
+              name: "GitHub",
               url: "https://github.com/Praiz001/personal-website",
               variant: "secondary",
+              btnImg: srcCodeIcon,
             },
           ],
         },
@@ -50,9 +54,10 @@ export const mocks = {
           projectDesc: "Realtime BTC/USDT price chart using binance API",
           projectActions: [
             {
-              name: "GitHub </>",
+              name: "GitHub",
               url: "https://github.com/Praiz001/FinChart",
               variant: "secondary",
+              btnImg: srcCodeIcon,
             },
           ],
         },
@@ -79,9 +84,10 @@ export const mocks = {
           projectImg: portfolio,
           projectActions: [
             {
-              name: "GitHub </>",
+              name: "GitHub",
               url: "https://github.com/Praiz001/personal-website",
               variant: "secondary",
+              btnImg: srcCodeIcon,
             },
           ],
         },
@@ -92,9 +98,10 @@ export const mocks = {
           projectDesc: "Realtime BTC/USDT price chart using binance API",
           projectActions: [
             {
-              name: "GitHub </>",
+              name: "GitHub",
               url: "https://github.com/Praiz001/FinChart",
               variant: "secondary",
+              btnImg: srcCodeIcon,
             },
           ],
         },
@@ -114,14 +121,16 @@ export const mocks = {
           projectImg: mealMasterImg,
           projectActions: [
             {
-              name: "Live <~>",
+              name: "Live",
               url: "https://gericht-luxe-restaurant.netlify.app/",
               variant: "primary",
+              btnImg: arrUpRightIcon,
             },
             {
-              name: "GitHub </>",
+              name: "GitHub",
               url: "https://github.com/Praiz001/mealMaster",
               variant: "secondary",
+              btnImg: srcCodeIcon,
             },
           ],
         },
@@ -133,14 +142,16 @@ export const mocks = {
           projectImg: tskTrack,
           projectActions: [
             {
-              name: "Live <~>",
+              name: "Live",
               url: "https://task-tracker-application.vercel.app/",
               variant: "primary",
+              btnImg: arrUpRightIcon,
             },
             {
-              name: "GitHub </>",
+              name: "GitHub",
               url: "https://github.com/Praiz001/taskTracker",
               variant: "secondary",
+              btnImg: srcCodeIcon,
             },
           ],
         },

@@ -1,5 +1,6 @@
 import { githubIcon, linkedInIcon, twitterIcon, emailIcon } from "@/app/assets";
-
+import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 export const mocks = {
   navLinks: [
@@ -23,16 +24,24 @@ export const mocks = {
 
   mediaLinks: [
     {
-      img: githubIcon,
+      Icon: FaGithub,
       route: "https://github.com/Praiz001",
     },
-    // {
-    //   img: twitterIcon,
-    //   route: "https://twitter.com/DWebGuy_Praise",
-    // },
     {
-      img: linkedInIcon,
-      route: "https://linkedin.com/in/praise-oshilim-4039aa10a",
+      Icon: FaLinkedin,
+      route: "www.linkedin.com/in/praise-oshilim-4039aa10a",
+    },
+    {
+      Icon: FaEnvelope,
+      route: "mailto:oshilimpraisek@gmail.com",
+    },
+    {
+      Icon: FaSquareXTwitter,
+      route: "https://twitter.com/praise_kel",
+    },
+    {
+      Icon: FaInstagram,
+      route: "https://www.instagram.com/praisee_kel/",
     },
   ],
 
@@ -69,29 +78,30 @@ export const mocks = {
 
   aboutMe: {
     intro:
-      "Hello there! I'm Praise, a self-taught software developer from the vibrant city of Lagos, Nigeria. I'm passionate about crafting digital solutions that make a difference.",
-    par1: "My journey into the world of tech kicked off in 2019 when I attended an Oil & Gas Pros conference (strange, right? - btw, I'm a geology grad) and was captivated by the capabilities of AR in Oil and Gas. That moment ignited a spark of curiosity in me, and let's just say, it's been a wild ride since then.",
-    par2: "Fast forward to 2021, and that initial curiosity has turned into a full-blown passion. I found this amazing space where creativity and problem-solving collide, thanks to the magic of coding. The possibilities seemed limitless, and I was hooked. The challenges of being self-taught haven't stopped me because my love for development runs deep. I genuinely believe that technology has the power to change lives.",
-    par3: "So, here I am, having worn a few hats along the way. I've freelanced for a B2B company, worked at a digital consultancy startup, and currently enjoying the thrill of working with a top 5 cryptocurrency exchange in Nigeria, where I've contributed in building some amazing products such as a crypto academy platform and it's admin dashboard, an internal CSS library, data visualization tool, responsive websites, etc",
-    par4: "I'm very dedicated to learning, and that's been my not-so-secret weapon. So, let me spill the beans on my current tech crushes. I'm diving into the world of web3 and blockchain technology, getting cozy with DSA, and a bunch of other cool stuff. Learning is my jam, and I'm always hungry for that next byte of knowledge! 🚀",
-    par5: "I love challenges, especially the ones that involve building cool stuff on the web! I'm always up for a coding adventure. Think we could build something together? Shoot me an email, and let's make some digital magic happen! 🚀✨",
+      "👋 Hello there! I'm Praise Oshilim, a passionate frontend developer with a flair for crafting seamless and visually appealing digital experiences.",
+    par1: "I excel in a diverse tech stack, crafting responsive web applications that seamlessly blend aesthetics and functionality. My focus on clean code and intuitive design ensures a flawless user experience across various devices.",
+    par2: `${
+      new Date().getFullYear() - 2021
+    } years in, I've donned multiple hats – from a digital consultancy startup to freelancing for a B2B firm. Currently, I'm rocking it at a top 3 cryptocurrency exchange in Nigeria, where I focus on building and maintaining a crypto-academy (ed-tech solution), an internal CSS library, websites etc`,
+    par3: "What sets me apart is not just my commitment to staying updated with the latest web development trends, but my meticulous eye for detail and a strong ownership mindset. This ensures that the applications I create not only meet but exceed the expectations of today's dynamic online landscape.",
+    par4: "I'm always eager to explore exciting projects and potential collaborations. Feel free to connect if you have interesting ventures or challenges worth discussing! 🚀💻",
   },
 
   contactMe: [
     {
-      img: linkedInIcon,
-      label: "Oshilim Praise",
+      Icon: FaLinkedin,
+      label: "Praise Oshilim",
       url: "https://www.linkedin.com/in/praise-oshilim-4039aa10a/",
     },
-    // {
-    //   img: twitterIcon,
-    //   label: "@thewebguy_praise",
-    //   url: "https://twitter.com/DWebGuy_Praise",
-    // },
     {
-      img: emailIcon,
+      Icon: FaEnvelope,
       label: "oshilimpraisek@gmail.com",
       url: "mailto:oshilimpraisek@gmail.com",
+    },
+    {
+      Icon: FaSquareXTwitter,
+      label: "@praise_kel",
+      url: "https://twitter.com/praise_kel",
     },
   ],
 };

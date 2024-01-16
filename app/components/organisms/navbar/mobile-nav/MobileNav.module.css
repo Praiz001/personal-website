@@ -71,5 +71,21 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: .5rem;
+    gap: .6rem;  
 }
+
+.media_links ul li{
+    width: 24px;
+    height: 24px;
+    font-size: 1.5rem;
+    color: var(--gray-shade);
+}
+
+.media_links ul li:active{
+    color: var(--white-shade);
+}
+
+/* .media_links ul li:hover{
+    color: var(--white-shade);
+    transition: all .3s ease-in-out;
+} */

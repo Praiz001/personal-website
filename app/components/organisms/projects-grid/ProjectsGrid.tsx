@@ -6,6 +6,8 @@ import { useRouter } from 'next/navigation';
 import { SectionHeader } from '../../atoms'
 import { ProjectCard } from '../../molecules'
 import { StaticImageData } from 'next/image';
+import { arrRightIcon } from '@/app/assets';
+import Image from 'next/image';
 
 
 
@@ -21,6 +23,7 @@ type ProjectsGridProps = {
                 name: string
                 url: string
                 variant: "primary" | "secondary"
+                btnImg: any
             }[]
         }[]
         gridTitle: string
@@ -45,10 +48,10 @@ const ProjectsGrid = ({ data }: ProjectsGridProps) => {
                 </div>
                 {seeMoreBtn && (
                     <button onClick={() => router.push('/projects')}>
-                        View all ~~&gt;
+                        View all <Image src={arrRightIcon} alt="see more" />
                     </button>
                 )}
-            </section> 
+            </section>
 
             <section className={styles.projects_grid}>
                 {projects?.map((project, index) => {

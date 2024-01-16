@@ -14,7 +14,7 @@ const HeroSection = () => {
     return (
         <div className={styles.hero_container}>
             <section className={styles.text_content}>
-                <p>Praise is a seasoned <span>front-end web developer.</span></p>
+                <p>Praise is a seasoned <span>software developer.</span></p>
                 <p>
                     He excels in crafting dynamic web applications with robust functionalities,
                     tailored to exceed user expectations.

@@ -15,11 +15,12 @@ const SocialMedia = () => {
             <span />
             <ul>
                 {mediaLinks.map((link, idx) => {
-                    const { img, route } = link;
+                    const { Icon, route } = link;
                     return (
                         <li key={idx}>
                             <a href={route} target="_blank" rel="noopener noreferrer">
-                                <Image src={img} alt='media icon' height={32} width={32} />
+                                <Icon  />
+                                {/* <Image src={img} alt='media icon' height={32} width={32} /> */}
                             </a>
                         </li>
                     )

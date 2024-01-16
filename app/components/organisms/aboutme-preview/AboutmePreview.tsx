@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 import { SectionHeader, Button } from '../../atoms'
 import { mocks } from '../constant'
-import { portDots, persona2, squareDot } from '@/app/assets'
+import { portDots, persona2, squareDot, arrRightIcon } from '@/app/assets'
 import { useRouter } from 'next/navigation';
 
 interface AboutmePreviewProps {
@@ -13,7 +13,7 @@ interface AboutmePreviewProps {
 }
 const AboutmePreview = ({ isPreview }: AboutmePreviewProps) => {
     const router = useRouter();
-    const { aboutMe: { intro, par1, par2, par3, par4, par5} } = mocks;
+    const { aboutMe: { intro, par1, par2, par3, par4 } } = mocks;
 
     return (
         <div className={`${styles.aboutmepreview_wrapper} ${!isPreview && styles.aboutmedesc_center}`}>
@@ -27,13 +27,14 @@ const AboutmePreview = ({ isPreview }: AboutmePreviewProps) => {
                         <p>{par2}</p>
                         <p>{par3}</p>
                         <p>{par4}</p>
-                        <p>{par5}</p>
                     </>
                 )}
-                {isPreview && <Button 
-                    label='Read more ->' 
-                    customStyle={{ marginTop: "1.7rem"}}
+                {isPreview && <Button
+                    label='Read more'
+                    customStyle={{ marginTop: "1.7rem" }}
                     onClick={() => router.push("/about-me")}
+                    img={arrRightIcon}
+
                 />}
             </section>
 

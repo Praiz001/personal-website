@@ -24,6 +24,34 @@
     font-family: var(--font-fira-code);
     font-weight: 500;
     word-wrap: break-word;
+
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    transition: all .3s ease-in-out;
+}
+
+.projectsgrid_headers button img {
+    padding: .1rem;
+    border-radius: 50%;
+}
+
+.projectsgrid_headers button:hover img {
+    animation: mooveRight .6s linear infinite alternate;
+}
+
+@keyframes mooveRight {
+    from {
+        transition: all .3s ease-in-out;
+        translate: 0;
+        background-color: transparent;
+    }
+
+    to {
+        transition: all .3s ease-in-out;
+        translate: 40%;
+        background-color: var(--purple-shade);
+    }
 }
 
 .projects_grid {
@@ -32,14 +60,14 @@
     gap: 1rem;
 
     /* yea the line below is intentional */
-    align-items: flex-start; 
+    align-items: flex-start;
     /* align-items: stretch; */
     /* justify-content: center; */
 }
 
 @media (max-width: 710px) {
     .projects_grid {
-       justify-content: center; 
+        justify-content: center;
     }
 }
 
@@ -54,4 +82,3 @@
         font-size: .8rem;
     }
 }
-
