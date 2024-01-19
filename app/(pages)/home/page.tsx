@@ -34,8 +34,6 @@ export default function Home() {
             <section className={styles.contactpreview_section}>
                 <ContactPreview />
             </section>
-
-
         </main>
     )
 }

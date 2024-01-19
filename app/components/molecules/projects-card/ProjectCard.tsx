@@ -52,10 +52,10 @@ const ProjectCard = ({ cardData }: ProjectCardProps) => {
             {projectActions?.map((actions, index) => {
               const { name, url, variant, btnImg } = actions;
               return (
-                <Button 
-                  onClick={() => routeExternally(url)} 
-                  key={index} 
-                  label={name} 
+                <Button
+                  onClick={() => routeExternally(url)}
+                  key={index}
+                  label={name}
                   variant={variant}
                   img={btnImg}
                 />

@@ -28,19 +28,29 @@
 .primary_button {
     border: 1px solid var(--purple-shade);
     color: var(--white-shade);
+
+    transition: all .3s ease-in-out;
 }
 
 .primary_button:hover {
-    background-color: rgba(199, 120, 221, 0.2);
+    /* background-color: rgba(199, 120, 221, 0.2); */
+    transform: translate(-4px, -4px);
+    box-shadow: 3px 3px 0 0 var(--purple-shade);
+    transition: all .3s ease-in-out;
 }
 
 .secondary_button {
     border: 1px solid var(--gray-shade);
     color: var(--gray-shade);
+
+    transition: all .3s ease-in-out;
 }
 
 .secondary_button:hover {
-    background-color: rgba(171, 178, 191, 0.2);
+    /* background-color: rgba(171, 178, 191, 0.2); */
+    transform: translate(-4px, -4px);
+    box-shadow: 3px 3px 0 0 var(--gray-shade);
+    transition: all .3s ease-in-out;
 }
 
 

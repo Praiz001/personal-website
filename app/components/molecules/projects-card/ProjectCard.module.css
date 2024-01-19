@@ -2,15 +2,31 @@
     border: 1px solid var(--gray-shade);
     max-width: 20.5rem;
     width: 100%;
-
     overflow: hidden;
+    
+    transition: all .3s ease-out;
+}
+
+.projectcard_wrapper:hover {
+    transition: all .3s ease-in;
+    box-shadow: 0 4px 16px rgba(171, 178, 191, 0.4);
+}
+
+.image_wrapper {
+    position: relative;
 }
 
 .projectcard_wrapper figure {
+    overflow: hidden;
+}
+
+.projectcard_wrapper figure img {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;  
+    cursor: pointer;
+
+    transition: all .4s ease;
 }
 
 .projectcard_body {}
@@ -51,11 +67,11 @@
     word-wrap: break-word
 }
 
-.project_desc > div {
+.project_desc>div {
     display: flex;
     align-items: center;
     /* align-items: stretch; */
     flex-wrap: wrap;
     gap: 1rem;
-   
+
 }
